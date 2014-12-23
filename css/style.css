@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* reset */
+body, div, ul, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, button, textarea, select, p, table, th, td, input{margin:0;padding:0;}
+header, footer {display:block;margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset, img {border:0;}
+li {list-style:none;}
+em{ font-style: normal; font-weight:bold;}
+hr{height:1px;border:none;border-top:1px solid Black;margin:0;*+margin:0 0 -14px 0;float:none;*+float:left;display:block;}
+a{ text-decoration:none;color:#333333;}
+ul{ list-style:none}
+
+
+
+body,html{background-color: #BEC4C5;height: 100%;width: 100%;}
+.wrap{position: relative;height: 1200px;}
+
+
+/*上侧工具栏*/
+#topBar{height: 60px;background-color:#373737;box-shadow:0 1px 4px #666666;position: relative;}
+#topBar .top-header a{display: inline-block;width: 142px;height: 60px;line-height: 60px;background: url('../img/LogoHeader.png') no-repeat left center;}
+#topBar .top-right{position: absolute;right: 20px;top: 0;height: 60px;line-height: 60px;color: #ffffff;}
+#topBar .top-right a{color: #ffffff;}
+#topBar .top-right a i{margin: 0 10px;}
+
+
+/*左侧工具栏*/
+#sideBar{position: absolute;top:80px;left: 0;width:70px;background-color: #373737;border-radius: 0 5px 5px 0;box-shadow: 0 2px 5px #666666;color: #ffffff;}
+#sideBar ul{padding: 15px 0;}
+#sideBar ul li a{display: block;position: relative;width: 40px;height: 50px;line-height: 100%;padding: 0 15px;margin-bottom:10px;color:#ffffff;}
+#sideBar ul li a i{position:absolute;z-index:2;border: 2px solid #ddd;border-radius: 30px;text-align: center;line-height: 28px;width: 30px;height: 30px;top: 8px;}
+#sideBar ul li a span{position:absolute;left:0;z-index:1;font-weight:bold;width: 0px;text-align: right;background-color: #428bca;height: 50px;line-height: 50px;padding-right: 0px;border-radius: 0  5px 5px  0px;overflow: hidden;transition:width 0.5s;-webkit-transition:width 0.5s;}
+#sideBar ul li a span.active{width: 110px;padding-right: 10px;}
+
+/*中心内容栏*/
+#page{position: absolute;left:40%;top:100px;width: 595px;height: 442px;background-color: #ffffff;box-shadow: 1px 1px 5px #666;border:1px solid #eee;transform:translate(-50%,0%);-webkit-transform:translate(-50%,0%);}
+
+
+/*右侧工具栏*/
+#rightBar{position: absolute;top:60px;right: 0;width:300px;padding:15px;}
+#rightBar .panel{box-shadow: 0 3px 5px #666666;}
+#rightBar .panel-body{height: 260px;}
+#rightBar a.collapsed{text-decoration: none;}
+#rightBar a.collapsed:active{text-decoration: none;}
+#rightBar a.collapsed[aria-expanded*="true"]{text-decoration: none;}
+/*可操作的工具*/
+.opera{position: absolute;width: 20px;height: 20px;color: #373737;text-align: center;cursor:pointer;}
+
+
+/**页面设置*/
+#pageSet{height:360px;}
+#pageSet .panel-body span{margin-right:15px;}
+#pageSet .panel-body ul.dropdown-menu{left:40px;}
+#pageSet div.page-dir{margin: 15px 0;}
+#pageSet div.page-dir #level{display:inline-block;width:30px;height:23px;background: url('../img/hor.png') no-repeat left center;vertical-align: middle;margin-right: 10px;}
+#pageSet div.page-dir #ver{display:inline-block;width:23px;height:30px;background: url('../img/ver.png') no-repeat left center;vertical-align: middle;}
+#pageSet div.page-dir a.current{box-shadow: 2px 2px 2px #444;}
+#pageSet div.page-margins{position: relative;}
+#pageSet div.page-margins .list-group{position: absolute;top:0;left:80px;}
+
+/*文本设置**/
+#tfSet{}
+#tfSet div.input-group{margin-bottom: 5px;}
+#tfSet span.input-group-addon{width: 98px;}
+#tfSet span.input-group-addon input{vertical-align:middle;}
+#tfSet div.input-group button{margin: 0 3px;}
+#tfSet div.input-group:last-child span.input-group-addon{border-right: 1px solid #CCCCCC;}
+
+/**打印选项*/
+#printFormat{position:fixed;left:0;top:0;z-index:999;width: 100%;text-align: center;height:100%;background-color:rgba(55,55,55,0.5);}
+#printFormat .row{width:700px;height:320px;padding:15px;position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);background-color:rgb(55,55,55);border-radius: 8px;}
+#printFormat .row .thumbnail img{display:block;width:150px;height: 150px;border:2px solid #ffffff;}
+#printFormat .row .thumbnail img:hover,#printFormat .row .thumbnail img.select{border: 2px solid #EE7C6B;}
+#printFormat .row div.caption h3{font-size: 14px;}
+#printFormat .row>a{position:absolute;right:-12px;top:-8px;display:block;width: 30px;height: 30px;font-size: 20px;color:#ffffff;text-decoration: none;}

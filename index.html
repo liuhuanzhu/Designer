@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta content="text/html" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/font.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="topBar">
+				<div class="top-header"><a href="#"></a></div>
+				<div class="top-right">
+					<a href="#"><i class="fa fa-gears"></i>liuhuanzhu<i class="fa fa-chevron-down"></i></a>
+				</div>
+			</div>
+			<div id="sideBar">
+				<ul>
+					<li><a href="#"><i class="fa fa-plus"></i><span>新建</span></a></li>
+					<li><a href="#"><i class="fa fa-file-image-o"></i><span>模版</span></a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i><span>导入</span></a></li>
+				</ul>
+			</div>
+			<div id="page">
+				<div id="line"></div>	
+						
+			</div>
+			<div id="rightBar">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-primary">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#pageSet" aria-expanded="false" aria-controls="pageSet">
+					          页面设置
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="pageSet" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        	<div class="dropdown primary">
+					        	<span>纸张选择:</span>
+								  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1"
+								   data-toggle="dropdown">
+								    A4<span class="caret"></span> </button>
+								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A4</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A5</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B4</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B5</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">凭证</a></li>
+								  </ul>
+								</div>	
+								<!--纸张方向-->
+								<div class="page-dir">
+									<span>纸张方向:</span>
+									<a href="#" id="level"></a>
+									<a href="" id="ver" class="current"></a>
+								</div>
+								<!--左右边距-->
+								<div class="page-margins">
+									<span>左右边距:</span>
+									<ul class="list-group">
+									  <li class="list-group-item">
+									  	<div class="input-group">
+										  <span class="input-group-addon">上:</span>
+										  <input type="text" class="form-control">
+										</div>
+									  </li>
+									  <li class="list-group-item">
+									  	<div class="input-group">
+										  <span class="input-group-addon">下:</span>
+										  <input type="text" class="form-control">
+										</div>
+									  </li>
+									  <li class="list-group-item">
+									  	<div class="input-group">
+										  <span class="input-group-addon">左:</span>
+										  <input type="text" class="form-control">
+										</div></li>
+									  <li class="list-group-item">
+									  	<div class="input-group">
+										  <span class="input-group-addon">右:</span>
+										  <input type="text" class="form-control">
+										</div></li>
+									</ul>
+								</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-primary">
+					    <div class="panel-heading" role="tab" id="headingTwo">
+					      <h4 class="panel-title">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tfSet" aria-expanded="false" aria-controls="tfSet">
+					         文本设置
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="tfSet" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					      <div class="panel-body">
+					       		<div class="input-group">
+									 <span class="input-group-addon">
+								        <input type="radio">
+								        内容文本
+								      </span>
+								      <input type="text" class="form-control" placeholder="请输入内容">
+								</div>
+								<div class="input-group">
+									 <span class="input-group-addon">
+								        <input type="radio">
+								        动态文本
+								      </span>
+								      <input type="text" class="form-control" placeholder="请输入ID">
+								</div>
+								<div class="input-group">
+								  <span class="input-group-addon">宽度:</span>
+								  <input type="text" class="form-control" placeholder="宽度">
+								</div>
+								<div class="input-group">
+								  <span class="input-group-addon">字体大小:</span>
+								  <input type="text" class="form-control" placeholder="宽度">
+								</div>
+								 <div class="input-group">
+							      <span class="input-group-addon">
+							        <input type="checkbox">
+							         下划线
+							      </span>
+							      <span class="input-group-addon">
+							        <input type="checkbox">
+							         字体加粗
+							      </span>
+							    </div>
+								<div class="input-group">
+								  <span class="input-group-addon">对齐方式:</span>
+							        <button type="button" class="btn btn-default"><span class="fa fa-align-left"></span></button>
+							        <button type="button" class="btn btn-default"><span class="fa fa-align-center"></span></button>
+							        <button type="button" class="btn btn-default"><span class="fa fa-align-right"></span></button>
+								</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-primary">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					         表格设置
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="panel-body">
+					       
+					      </div>
+					    </div>
+					  </div>
+					</div>	
+			</div>
+		</div>
+		<div id="printFormat" style="display:none;">
+			<div class="row" >
+					<a href="#" class="fa fa-times-circle"></a>
+			      <div class="col-sm-6 col-md-4">
+			        <div class="thumbnail">
+			          <img  src="img/format_1.png" data-holder-rendered="true" class="select">
+			          <div class="caption">
+			            <h3>默认样式</h3>
+			            <p><a href="#" class="btn btn-primary" role="button">使用</a></p>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-sm-6 col-md-4">
+			        <div class="thumbnail">
+			          <img data-src="holder.js/100%x200" alt="100%x200" src="img/format_2.png" data-holder-rendered="true" >
+			          <div class="caption">
+			            <h3>样式二</h3>
+			             <p><a href="#" class="btn btn-primary" role="button">使用</a></p>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-sm-6 col-md-4">
+			        <div class="thumbnail">
+			          <img data-src="holder.js/100%x200" alt="100%x200" src="img/format_3.png" data-holder-rendered="true">
+			          <div class="caption">
+			            <h3>样式三</h3>
+			            <p><a href="#" class="btn btn-primary" role="button">使用</a></p>
+			          </div>
+			        </div>
+			      </div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.drag.js"></script>
+		<script type="text/javascript" src="js/jquery.page.js"></script>
+		<script type="text/javascript" src="js/jquery.operating.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#page").opeartHandler();
+			});
+			$("#sideBar ul li a").hover(function()
+			{
+				$(this).find("span").addClass("active");
+			},
+			function()
+			{
+				$(this).find("span").removeClass("active");
+			})
+		</script>
+	</body>
+</html>
